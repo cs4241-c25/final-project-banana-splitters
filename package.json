@@ -1,0 +1,23 @@
+{
+  "name": "final-project-banana-splitters",
+  "version": "1.0.0",
+  "description": "WPI Mental Health and Wellness Hub",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cs4241-c25/final-project-banana-splitters.git"
+  },
+  "author": "Ashleigh Perez, Maeve Norton, Kendall Hulburt, Jesse Kinsmann, Conor Slattery",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cs4241-c25/final-project-banana-splitters/issues"
+  },
+  "homepage": "https://github.com/cs4241-c25/final-project-banana-splitters#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
