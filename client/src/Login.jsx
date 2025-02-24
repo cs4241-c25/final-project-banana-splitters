@@ -1,3 +1,5 @@
+/*
+
 import React, { useState } from 'react';
 
 const Login = () => {
@@ -43,7 +45,7 @@ const Login = () => {
                             </div>
                             <div className="mb-6">
                                 <label htmlFor="password" className="block text-sm font-bold mb-2">Password:</label>
-                                <input type="password" id="password" name="password"="w-full px-4 py-2 border border-gray-300 rounded-md" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} required/>
+                                <input type="password" id="password" name="password" className="w-full px-4 py-2 border border-gray-300 rounded-md" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} required/>
                             </div>
                             <button type="submit" className="w-full py-2 bg-red-700 text-white font-bold rounded-md hover:bg-red-800 transition-colors">Login</button>
                         </form>
@@ -53,4 +55,24 @@ const Login = () => {
         </div>
     );
 };
+export default Login;
+
+ */
+// Made it just a button click for now
+import React from "react";
+import { useAuth0 } from "@auth0/auth0-react";
+
+const Login = () => {
+    const { loginWithRedirect } = useAuth0();
+
+    return (
+        <div>
+            <h1>Welcome to the Mental Health and Wellness Hub</h1>
+            <button onClick={() => loginWithRedirect({redirectUri: "http://localhost:5173"})}>
+                Login with Auth0
+            </button>
+        </div>
+    );
+};
+
 export default Login;

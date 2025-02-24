@@ -1,3 +1,5 @@
+import React from "react";
+
 const SelfCare = () => {
     return (
         <>
@@ -188,10 +190,5 @@ const SelfCare = () => {
     );
 };
 
-// Ensure the root exists and render the component
-const rootElement = document.getElementById('root');
-if (rootElement) {
-    ReactDOM.createRoot(rootElement).render(<SelfCare/>);
-} else {
-    console.error(" Root element not found!");
-}
+
+export default SelfCare;
