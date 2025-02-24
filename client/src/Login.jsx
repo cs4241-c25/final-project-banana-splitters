@@ -58,6 +58,7 @@ const Login = () => {
 export default Login;
 
  */
+
 // Made it just a button click for now
 import React from "react";
 import { useAuth0 } from "@auth0/auth0-react";
@@ -68,7 +69,7 @@ const Login = () => {
     return (
         <div>
             <h1>Welcome to the Mental Health and Wellness Hub</h1>
-            <button onClick={() => loginWithRedirect({redirect_uri: "http://localhost:5173"})}>
+            <button onClick={() => loginWithRedirect({ appState: { returnTo: "/admin" } })}>
                 Login with Auth0
             </button>
         </div>
