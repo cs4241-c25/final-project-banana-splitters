@@ -1,5 +1,7 @@
 import React from 'react';
 import { useAuth0 } from '@auth0/auth0-react';
+import './App.css'
+import SelfCare from './selfCare.jsx';
 
 function App() {
     const { loginWithRedirect, logout, user, isAuthenticated } = useAuth0();
