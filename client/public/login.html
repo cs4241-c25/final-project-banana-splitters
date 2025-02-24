@@ -10,8 +10,8 @@
 <div id="app"></div>
 <div class="flex justify-center items-center min-h-screen">
     <div class="bg-gray-300 p-8 rounded-lg shadow-lg max-w-sm w-full">
-        <header class="text-center mb-6 bg-gray-800 text-white py-3 rounded-t-lg">
-            <h1 class="text-xl font-semibold">Login</h1>
+        <header class="text-center mb-6 text-white py-3 rounded-t-lg">
+        <h1 class="text-4xl font-semibold">Login</h1>
         </header>
         <main>
             <section class="form-section">
@@ -32,38 +32,5 @@
         </main>
     </div>
 </div>
-
-<script>
-    document.getElementById('login-form').addEventListener('submit', async function(event) {
-        event.preventDefault();
-
-        const username = document.getElementById('username').value;
-        const password = document.getElementById('password').value;
-
-        if (!username || !password) {
-            alert('Please enter both a username and password!');
-            return;
-        }
-        try {
-            const response = await fetch('/login', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({ username, password })
-            });
-
-            if (response.ok) {
-                localStorage.setItem('username', username);
-                window.location.href = '/';
-            } else {
-                alert('Login failed. Please try again.');
-            }
-        } catch (error) {
-            console.error('Login error:', error);
-            alert('Login failed. Please try again.');
-        }
-    });
-</script>
 </body>
 </html>
