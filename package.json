@@ -18,7 +18,10 @@
   },
   "homepage": "https://github.com/cs4241-c25/final-project-banana-splitters#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "jwks-rsa": "^3.1.0",
     "mongoose": "^8.10.1"
   },
   "devDependencies": {
