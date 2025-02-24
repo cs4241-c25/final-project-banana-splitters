@@ -6,8 +6,7 @@ import App from './App';
 const domain = "dev-xf1gnvayvu76e2me.us.auth0.com";
 const clientId = "fGIjW4jWBEmttKpLr7HFiNbDRHCP3suZ";
 
-// Create a root and render your app
-const root = ReactDOM.createRoot(document.getElementById('root'));  // Use createRoot
+const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
     <Auth0Provider
         domain={domain}
