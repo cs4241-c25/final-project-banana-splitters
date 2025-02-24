@@ -13,7 +13,6 @@ const SelfCare = () => {
                 boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
                 zIndex: 1000
             }}>
-
                 <div style={{
                     display: 'flex',
                     alignItems: 'center', // Aligns items vertically
@@ -31,7 +30,7 @@ const SelfCare = () => {
                         fontSize: '1.5rem',
                         fontWeight: 'bold',
                         fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif',
-                    }}>
+                    }} >
                         WPI Mental Health and Wellness Hub
                     </h1>
                 </div>
@@ -53,13 +52,15 @@ const SelfCare = () => {
                     </div>
                 </nav>
             </header>
-            <div style={{padding: '2rem', backgroundColor: '#F5F5F5', minHeight: '100vh'}}>
+
+            <div style={{padding:'2rem', backgroundColor: '#F5F5F5', minHeight: '100vh'}}>
                 {/* Heading */}
                 <h1 style={{
                     color: '#AC2B37',
                     textAlign: 'center',
                     fontSize: '50px',
-                    fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif'
+                    fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif',
+                    marginTop: '120px'
                 }}>
                     Self-Care
                 </h1>
