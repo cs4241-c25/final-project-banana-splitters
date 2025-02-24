@@ -56,12 +56,6 @@
         margin-bottom: 10px;
       }
 
-      .form-group label {
-        width: 180px; 
-        text-align: right;
-        padding-right: 10px;
-      }
-
       .form-group input {
         flex: 1;
       }
@@ -69,7 +63,6 @@
       .radio-group {
         display: flex;
         flex-direction: column;
-        margin-left: 100px; 
         margin-bottom: 10px;
       }
 
@@ -78,7 +71,7 @@
       }
 
       .concerns-group {
-        margin-left: 100px; 
+      /* placeholder group */
       }
 
       textarea {
@@ -94,12 +87,12 @@
         <form id="care-report">
           <div class="form-group">
             <label for="rStudent">Your Name:</label>
-            <input type="text" id="rStudent" name="Reporter" required>
+            <input type="text" id="rStudent" name="Reporter" placeholder="Type here..." required>
           </div>
 
           <div class="form-group">
             <label for="cStudent">Student's Name:</label>
-            <input type="text" id="cStudent" name="Client" required>
+            <input type="text" id="cStudent" name="Client" placeholder="Type here..." required>
           </div>
 
           <div class="form-group">
@@ -116,7 +109,7 @@
           </div>
 
           <div class="concerns-group">
-            <textarea id="concerns" name="concerns" rows="4" cols="50" required></textarea>
+            <textarea id="concerns" name="concerns" placeholder="Type here..." rows="4" cols="50" required></textarea>
           </div>
         </form>
       </div>
