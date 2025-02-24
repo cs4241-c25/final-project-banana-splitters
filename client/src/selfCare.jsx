@@ -1,4 +1,3 @@
-
 const SelfCare = () => {
     return (
         <>
@@ -141,7 +140,6 @@ const SelfCare = () => {
                             backgroundColor: '#D9D9D9',
                             display: 'flex',
                             flexDirection: 'column', // Stack content vertically
-                            alignItems: 'center', // Center horizontally
                             padding: 0, // Ensure no extra padding
                         }}>
                             {/* Right side content goes here */}
@@ -160,9 +158,28 @@ const SelfCare = () => {
                                 Self-Care Ideas
                             </h2>
 
+                            <div className = "display: flex, align-items-left">
+                                <ul style={{
+                                    color: '#34383B',
+                                    fontSize: '28px',
+                                    fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif',
+                                    textAlign: 'left',
+                                    lineHeight: '2'
+                                }}>
+                                    <li>Read a favorite book</li>
+                                    <li>Practice meditation</li>
+                                    <li>Go for a walk</li>
+                                    <li>Listen to music</li>
+                                    <li>Journal your thoughts</li>
+                                    <li>Take a relaxing bath</li>
+                                    <li>Enjoy a cup of tea</li>
+                                </ul>
+
+                            </div>
                         </div>
 
                     </div>
+
 
                 </div>
 
@@ -174,7 +191,7 @@ const SelfCare = () => {
 // Ensure the root exists and render the component
 const rootElement = document.getElementById('root');
 if (rootElement) {
-    ReactDOM.createRoot(rootElement).render(<SelfCare />);
+    ReactDOM.createRoot(rootElement).render(<SelfCare/>);
 } else {
     console.error(" Root element not found!");
 }
