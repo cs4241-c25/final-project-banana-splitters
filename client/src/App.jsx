@@ -1,20 +1,21 @@
-import React from 'react'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import Admin from './admin'
-import Login from './Login'
-import Home from './home'  // Add this import for the Home component
-
+import React from 'react';
+import { useAuth0 } from '@auth0/auth0-react';
 
 function App() {
+    const { loginWithRedirect, logout, user, isAuthenticated } = useAuth0();
+
     return (
-        <Router>
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/admin" element={<Admin />} />
-                <Route path="/login" element={<Login />} />
-            </Routes>
-        </Router>
-    )
+        <div>
+            {!isAuthenticated ? (
+                <button onClick={() => loginWithRedirect()}>Log In</button>
+            ) : (
+                <>
+                    <h1>Welcome, {user.name}</h1>
+                    <button onClick={() => logout({ returnTo: window.location.origin })}>Log Out</button>
+                </>
+            )}
+        </div>
+    );
 }
 
 export default App;
