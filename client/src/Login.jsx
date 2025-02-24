@@ -68,7 +68,7 @@ const Login = () => {
     return (
         <div>
             <h1>Welcome to the Mental Health and Wellness Hub</h1>
-            <button onClick={() => loginWithRedirect({redirectUri: "http://localhost:5173"})}>
+            <button onClick={() => loginWithRedirect({redirect_uri: "http://localhost:5173"})}>
                 Login with Auth0
             </button>
         </div>
