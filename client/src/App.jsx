@@ -2,7 +2,7 @@ import React from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Admin from './admin'
 import Login from './Login'
-import Home from './Home'  // Add this import for the Home component
+import Home from './home'  // Add this import for the Home component
 
 
 function App() {
