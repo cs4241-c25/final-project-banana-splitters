@@ -4,8 +4,10 @@
   "description": "WPI Mental Health and Wellness Hub",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "dev": "concurrently \"npm run dev --prefix client\" \"npm run start\"",
+    "build": "npm run build --prefix client",
+    "deploy": "npm run build && npm run start"
   },
   "repository": {
     "type": "git",
@@ -27,6 +29,7 @@
   "devDependencies": {
     "autoprefixer": "^10.4.20",
     "postcss": "^8.5.3",
-    "tailwindcss": "^4.0.8"
+    "tailwindcss": "^4.0.8",
+    "concurrently": "^9.1.2"
   }
 }
