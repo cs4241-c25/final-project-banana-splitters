@@ -19,7 +19,6 @@ const SelfCare = () => {
                     Self-Care
                 </h1>
 
-                {/* Main Content */}
                 <div style={{display: 'flex', width: '100vw', minHeight: '100vh'}}>
 
                     {/* Left Side */}
@@ -28,14 +27,12 @@ const SelfCare = () => {
                         backgroundColor: '#F5F5F5',
                         display: 'flex',
                         justifyContent: 'center',
-                        alignItems: 'flex-start', // Align to the top
-                        paddingTop: '1rem' // Reduce padding at the top
+                        alignItems: 'flex-start',
+                        paddingTop: '1rem'
                     }}>
 
-                        {/* Stack Content Vertically */}
                         <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
 
-                            {/* First Block */}
                             <div>
                                 <h2 style={{
                                     color: '#AC2B37',
@@ -55,7 +52,6 @@ const SelfCare = () => {
                                 </p>
                             </div>
 
-                            {/* Second Block */}
                             <div>
                                 <h2 style={{
                                     color: '#AC2B37',
@@ -80,30 +76,28 @@ const SelfCare = () => {
 
                     </div>
 
-                    {/* Right Side */}
                     <div style={{
                         width: '50vw',
                         backgroundColor: '#F5F5F5',
                         display: 'flex',
                         justifyContent: 'center',
-                        alignItems: 'flex-start', // Align to the top
-                        paddingTop: '1rem' // Reduce padding at the top
+                        alignItems: 'flex-start',
+                        paddingTop: '1rem'
                     }}>
                         <div style={{
                             width: '42vw',
                             height: '42vw',
                             backgroundColor: '#D9D9D9',
                             display: 'flex',
-                            flexDirection: 'column', // Stack content vertically
-                            padding: 0, // Ensure no extra padding
+                            flexDirection: 'column',
+                            padding: 0,
                         }}>
-                            {/* Right side content goes here */}
                             <h2 style={{
                                 color: '#F5F5F5',
                                 backgroundColor: '#34383B',
                                 fontSize: '30px',
                                 fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif',
-                                width: '100%', // Ensure it spans the entire width of the parent
+                                width: '100%',
                                 height: '15%',
                                 margin: 0,
                                 display: 'flex',
@@ -113,14 +107,15 @@ const SelfCare = () => {
                                 Self-Care Ideas
                             </h2>
 
-                            <div className = "display: flex">
+                            <div style = {{ display:'flex'}}>
                                 <ul style={{
                                     color: '#34383B',
                                     fontSize: '28px',
                                     fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif',
                                     textAlign: 'left',
                                     lineHeight: '2',
-                                    paddingLeft: "30px"
+                                    paddingLeft: "30px",
+                                    listStyleType: 'disc'
                                 }}>
                                     <li>Read a favorite book</li>
                                     <li>Practice meditation</li>
