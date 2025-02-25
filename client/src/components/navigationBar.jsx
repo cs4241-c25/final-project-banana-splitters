@@ -1,4 +1,4 @@
-
+import wpiCrest from '../assets/wpiCrest2.png';
 const NavigationBar = () => {
     return (
         <>
@@ -20,7 +20,7 @@ const NavigationBar = () => {
                     gap: '1rem', // Adds space between the image and the heading
                 }}>
                     <img
-                        src='../assets/wpiCrest2.png'
+                        src= {wpiCrest}
                         alt="WPI Logo"
                         style={{width: '50px', height: '50px'}}
                     />
@@ -46,7 +46,6 @@ const NavigationBar = () => {
                     }}>
                         <p style={{color: '#F5F5F5'}}>Home</p>
                         <p style={{color: '#F5F5F5'}}>Self Care</p>
-                        <p style={{color: '#F5F5F5'}}>Resources</p>
                         <p style={{color: '#F5F5F5'}}>Care Report Form</p>
                         <p style={{color: '#F5F5F5'}}>Admin</p>
                     </div>
