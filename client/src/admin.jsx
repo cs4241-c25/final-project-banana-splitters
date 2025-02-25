@@ -1,5 +1,6 @@
 import React from "react";
 import { useAuth0 } from "@auth0/auth0-react";
+import NavigationBar from './components/navigationBar.jsx';
 
 const Admin = () => {
     const { user, logout, isAuthenticated } = useAuth0();
@@ -9,6 +10,8 @@ const Admin = () => {
     }
 
     return (
+        <>
+        <NavigationBar />
         <div style={{ padding: "2rem" }}>
             <h1>Admin Page</h1>
             <p>Welcome, {user?.name}! This is the admin page.</p>
@@ -16,6 +19,7 @@ const Admin = () => {
                 Logout
             </button>
         </div>
+        </>
     );
 };
 
