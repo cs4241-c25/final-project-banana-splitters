@@ -35,7 +35,6 @@ const NavigationBar = () => {
                     </h1>
                 </div>
 
-
                 <nav>
 
                     <div style={{
@@ -43,11 +42,12 @@ const NavigationBar = () => {
                         width: '100%', // Ensure it spans the whole screen
                         fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif',
                         justifyContent: 'space-evenly',
+                        marginTop: "10px"
                     }}>
-                        <p style={{color: '#F5F5F5'}}>Home</p>
-                        <p style={{color: '#F5F5F5'}}>Self Care</p>
+                        <a href="/" style={{color: '#F5F5F5'}}>Home</a>
+                        <a href="/selfcare" style={{color: '#F5F5F5'}}>Self Care</a>
                         <p style={{color: '#F5F5F5'}}>Care Report Form</p>
-                        <p style={{color: '#F5F5F5'}}>Admin</p>
+                        <a href="/admin" style={{color: '#F5F5F5'}}>Admin</a>
                     </div>
                 </nav>
             </header>
