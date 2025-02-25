@@ -7,19 +7,29 @@ const SelfCare = () => {
         <>
             <NavigationBar />
 
-            <div style={{padding:'2rem', backgroundColor: '#F5F5F5', minHeight: '100vh'}}>
+            <div style={{
+                padding: '2rem',
+                backgroundColor: '#F5F5F5',
+                minHeight: '100vh',
+                paddingTop: '22vh'
+            }}>
                 {/* Heading */}
                 <h1 style={{
                     color: '#AC2B37',
                     textAlign: 'center',
                     fontSize: '50px',
                     fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif',
-                    marginTop: '130px'
+                    margin: 0
                 }}>
                     Self-Care
                 </h1>
 
-                <div style={{display: 'flex', width: '100vw', minHeight: '100vh', marginTop: '30px'}}>
+                <div style={{
+                    display: 'flex',
+                    width: '100vw',
+                    minHeight: '100vh',
+                    marginTop: '30px'
+                }}>
 
                     {/* Left Side */}
                     <div style={{
@@ -30,9 +40,11 @@ const SelfCare = () => {
                         alignItems: 'flex-start',
                         paddingTop: '1rem'
                     }}>
-
-                        <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
-
+                        <div style={{
+                            display: 'flex',
+                            flexDirection: 'column',
+                            gap: '2rem'
+                        }}>
                             <div>
                                 <h2 style={{
                                     color: '#AC2B37',
@@ -71,11 +83,10 @@ const SelfCare = () => {
                                     yourself for others as well.
                                 </p>
                             </div>
-
                         </div>
-
                     </div>
 
+                    {/* Right Side */}
                     <div style={{
                         width: '50vw',
                         backgroundColor: '#F5F5F5',
@@ -107,7 +118,7 @@ const SelfCare = () => {
                                 Self-Care Ideas
                             </h2>
 
-                            <div style = {{ display:'flex'}}>
+                            <div style={{ display: 'flex' }}>
                                 <ul style={{
                                     color: '#34383B',
                                     fontSize: '28px',
@@ -125,17 +136,13 @@ const SelfCare = () => {
                                     <li>Take a relaxing bath</li>
                                     <li>Enjoy a cup of tea</li>
                                 </ul>
-
                             </div>
                         </div>
-
                     </div>
-
-
                 </div>
-
             </div>
         </>
+
     );
 };
 
