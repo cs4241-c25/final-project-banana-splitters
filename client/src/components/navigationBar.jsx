@@ -7,6 +7,7 @@ const NavigationBar = () => {
                 top: 0,
                 left: 0,
                 width: '100%',
+                height: '20%',
                 backgroundColor: '#AC2B37',
                 color: '#F5F5F5',
                 padding: '1rem',
@@ -41,7 +42,7 @@ const NavigationBar = () => {
                         width: '100%', // Ensure it spans the whole screen
                         fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif',
                         justifyContent: 'space-evenly',
-                        marginTop: "10px"
+                        marginTop: "25px"
                     }}>
                         <a href="/" style={{color: '#F5F5F5'}}>Home</a>
                         <a href="/selfcare" style={{color: '#F5F5F5'}}>Self Care</a>
