@@ -1,6 +1,6 @@
 import NavigationBar from './components/navigationBar.jsx';
 import React from "react";
-import wpiCrest from './assets/wpiCrest2.png'
+
 
 const SelfCare = () => {
     return (
