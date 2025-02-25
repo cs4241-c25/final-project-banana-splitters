@@ -10,14 +10,14 @@ const NavigationBar = () => {
                 backgroundColor: '#AC2B37',
                 color: '#F5F5F5',
                 padding: '1rem',
-                boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
+                boxShadow: '0 5px 4px rgba(0, 0, 0, 0.1)',
                 zIndex: 1000
             }}>
                 <div style={{
                     display: 'flex',
-                    alignItems: 'center', // Aligns items vertically
-                    justifyContent: 'center', // Centers the content horizontally
-                    gap: '1rem', // Adds space between the image and the heading
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    gap: '1rem',
                 }}>
                     <img
                         src= {wpiCrest}
@@ -25,7 +25,6 @@ const NavigationBar = () => {
                         style={{width: '50px', height: '50px'}}
                     />
 
-                    {/* Heading on the Right */}
                     <h1 style={{
                         fontSize: '1.5rem',
                         fontWeight: 'bold',
