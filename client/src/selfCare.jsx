@@ -14,12 +14,12 @@ const SelfCare = () => {
                     textAlign: 'center',
                     fontSize: '50px',
                     fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif',
-                    marginTop: '120px'
+                    marginTop: '130px'
                 }}>
                     Self-Care
                 </h1>
 
-                <div style={{display: 'flex', width: '100vw', minHeight: '100vh'}}>
+                <div style={{display: 'flex', width: '100vw', minHeight: '100vh', marginTop: '30px'}}>
 
                     {/* Left Side */}
                     <div style={{
