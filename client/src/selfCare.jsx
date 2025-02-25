@@ -1,4 +1,5 @@
 import React from "react";
+import wpiCrest from './assets/wpiCrest2.png'
 
 const SelfCare = () => {
     return (
@@ -21,7 +22,7 @@ const SelfCare = () => {
                     gap: '1rem', // Adds space between the image and the heading
                 }}>
                     <img
-                        src='./assets/wpiCrest2.png'
+                        src={wpiCrest}
                         alt="WPI Logo"
                         style={{width: '50px', height: '50px'}}
                     />
