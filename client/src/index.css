@@ -9,12 +9,24 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #F5F5F5;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.text-gray-custom {
+  color: #4B5563;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 a {
@@ -29,14 +41,33 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
+  flex-direction: column;
   min-width: 320px;
   min-height: 100vh;
+  justify-content: flex-start;
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+}
+.login-btn {
+  padding-left: 20px;
+}
+
+.mt-8 {
+  padding: 100px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  font-size: 16px;
+  margin-top: 2rem;
+}
+.mt-8 p {
+  font-weight: bold;
+  font-size: 24px;
+  color: #333;
+  padding-bottom: 40px;
+
 }
 
 button {
@@ -44,14 +75,17 @@ button {
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
   font-size: 1em;
-  font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #4F1217;
   cursor: pointer;
+  text-align: center;
   transition: border-color 0.25s;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 button:hover {
   border-color: #646cff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 button:focus,
 button:focus-visible {
