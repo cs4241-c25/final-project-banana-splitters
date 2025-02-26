@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Care Report</title>
+  </head>
+  <style>
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        font-family: 'Roboto', sans-serif;
+      }
+
+      h1 {
+        text-align: center;
+        color: #8f2934;
+        text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+      }
+
+      .form-container {
+        width: 80%;
+        max-width: 500px;
+      }
+      
+      .form-box {
+        background-color: #dfe0e0;
+        border: 1px solid #ccc;
+        padding: 20px;
+        border-radius: 5px;
+      }
+
+      .form-header {
+        background-color: #1f2327;
+        padding: 10px;
+        text-align: center;
+        font-size: 1.2em;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        margin: -20px -20px 20px -20px;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .form-group {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+
+      .form-group input {
+        flex: 1;
+      }
+
+      .radio-group {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+      }
+
+      .radio-group input {
+        margin-left: 15px;
+      }
+
+      .concerns-group {
+      /* placeholder group */
+      }
+
+      textarea {
+        width: 100%;
+      }
+    </style>
+  <body>
+    <h1>Care Report Form</h1>
+    <div class="form-container">
+      <div class="form-box">
+        <div class="form-header"></div>
+        <form id="care-report">
+          <div class="form-group">
+            <label for="rStudent">Your Name:</label>
+            <input type="text" id="rStudent" name="Reporter" placeholder="Type here..." required>
+          </div>
+
+          <div class="form-group">
+            <label for="cStudent">Student's Name:</label>
+            <input type="text" id="cStudent" name="Client" placeholder="Type here..." required>
+          </div>
+
+          <div class="form-group">
+            <label>Does this student live on-campus or off-campus?</label>
+          </div>
+
+          <div class="radio-group">
+            <label><input type="radio" id="on-campus" name="location" value="on-campus" required> On-Campus</label>
+            <label><input type="radio" id="off-campus" name="location" value="off-campus" required> Off-Campus</label>
+          </div>
+
+          <div class="form-group">
+            <label>Tell us about your concerns:</label>
+          </div>
+
+          <div class="concerns-group">
+            <textarea id="concerns" name="concerns" placeholder="Type here..." rows="4" cols="50" required></textarea>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
