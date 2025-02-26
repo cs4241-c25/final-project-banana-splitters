@@ -14,7 +14,7 @@ const NavigationBar = () => {
                 boxShadow: '0 5px 4px rgba(0, 0, 0, 0.1)',
                 zIndex: 1000,
                 display: 'flex',
-                flexDirection: 'column',
+                flexDirection: 'column'
             }}>
                 <div style={{
                     display: 'flex',
@@ -33,7 +33,6 @@ const NavigationBar = () => {
                         fontWeight: 'bold',
                         color: '#F5F5F5',
                         fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif',
-                        color: '#F5F5F5',
                     }}>
                         WPI Mental Health and Wellness Hub
                     </h1>
