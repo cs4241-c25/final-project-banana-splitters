@@ -32,6 +32,7 @@ const NavigationBar = () => {
                         fontSize: '1.5rem',
                         fontWeight: 'bold',
                         fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif',
+                        color: '#F5F5F5',
                     }}>
                         WPI Mental Health and Wellness Hub
                     </h1>
