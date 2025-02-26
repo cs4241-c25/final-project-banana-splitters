@@ -13,7 +13,7 @@ const CareReport = () => {
           <div className="form-header"></div>
           <form id="care-report">
             <div className="form-group">
-              <label htmlFor="rStudent">Your Name:</label>
+              <label htmlFor="rStudent">Your Name: </label>
               <input
                 type="text"
                 id="rStudent"
@@ -24,7 +24,7 @@ const CareReport = () => {
             </div>
 
             <div className="form-group">
-              <label htmlFor="cStudent">Student's Name:</label>
+              <label htmlFor="cStudent">Student's Name: </label>
               <input
                 type="text"
                 id="cStudent"
