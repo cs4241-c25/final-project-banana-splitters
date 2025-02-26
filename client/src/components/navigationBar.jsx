@@ -46,7 +46,7 @@ const NavigationBar = () => {
                     }}>
                         <a href="/" style={{color: '#F5F5F5', textDecoration: 'underline'}}>Home</a>
                         <a href="/selfcare" style={{color: '#F5F5F5', textDecoration: 'underline'}}>Self Care</a>
-                        <p style={{color: '#F5F5F5'}}>Care Report Form</p>
+                        <a href="/care-report" style={{color: '#F5F5F5', textDecoration: 'underline'}}>Care Report Form</a>
                         <a href="/admin" style={{color: '#F5F5F5', textDecoration: 'underline'}}>Admin</a>
                     </div>
                 </nav>
