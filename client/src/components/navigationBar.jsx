@@ -14,7 +14,7 @@ const NavigationBar = () => {
                 boxShadow: '0 5px 4px rgba(0, 0, 0, 0.1)',
                 zIndex: 1000,
                 display: 'flex',
-                flexDirection: 'column',
+                flexDirection: 'column'
             }}>
                 <div style={{
                     display: 'flex',
@@ -47,7 +47,7 @@ const NavigationBar = () => {
                     }}>
                         <a href="/" style={{color: '#F5F5F5', textDecoration: 'underline'}}>Home</a>
                         <a href="/selfcare" style={{color: '#F5F5F5', textDecoration: 'underline'}}>Self Care</a>
-                        <p style={{color: '#F5F5F5'}}>Care Report Form</p>
+                        <a href="/care-report" style={{color: '#F5F5F5', textDecoration: 'underline'}}>Care Report Form</a>
                         <a href="/admin" style={{color: '#F5F5F5', textDecoration: 'underline'}}>Admin</a>
                     </div>
                 </nav>

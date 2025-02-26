@@ -6,16 +6,18 @@ body {
     height: 100vh;
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    background: #F5F5F5;
   }
 
   h1 {
     text-align: center;
     color: #8f2934;
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+    margin: 10px;
   }
 
   .form-container {
-    width: 80%;
+    width: 100%;
     max-width: 500px;
   }
   
@@ -45,16 +47,19 @@ body {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
+    color: #000000;
   }
 
   .form-group input {
     flex: 1;
+    border: 2px solid #ccc;
   }
 
   .radio-group {
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
+    color: #000000;
   }
 
   .radio-group input {
@@ -62,7 +67,8 @@ body {
   }
 
   .concerns-group {
-  /* placeholder group */
+    color: #000000;
+    border: 2px solid #ccc;
   }
 
   textarea {

@@ -11,9 +11,9 @@ const SelfCare = () => {
                 padding: '2rem',
                 backgroundColor: '#F5F5F5',
                 minHeight: '100vh',
-                paddingTop: '22vh'
+                paddingTop: '60vh'
             }}>
-                {/* Heading */}
+
                 <h1 style={{
                     color: '#AC2B37',
                     textAlign: 'center',
@@ -31,14 +31,15 @@ const SelfCare = () => {
                     marginTop: '30px'
                 }}>
 
-                    {/* Left Side */}
                     <div style={{
                         width: '50vw',
                         backgroundColor: '#F5F5F5',
                         display: 'flex',
                         justifyContent: 'center',
                         alignItems: 'flex-start',
-                        paddingTop: '1rem'
+                        paddingTop: '1rem',
+                        paddingLeft: '1rem',
+
                     }}>
                         <div style={{
                             display: 'flex',

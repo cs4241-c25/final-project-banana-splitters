@@ -1,8 +1,11 @@
 import React from "react";
 import "./care-report.css"; // Import your CSS file
+import NavigationBar from "./components/navigationBar.jsx";
 
 const CareReport = () => {
   return (
+      <>
+      <NavigationBar />
     <div className="care-report">
       <h1>Care Report Form</h1>
       <div className="form-container">
@@ -10,7 +13,7 @@ const CareReport = () => {
           <div className="form-header"></div>
           <form id="care-report">
             <div className="form-group">
-              <label htmlFor="rStudent">Your Name:</label>
+              <label htmlFor="rStudent">Your Name: </label>
               <input
                 type="text"
                 id="rStudent"
@@ -21,7 +24,7 @@ const CareReport = () => {
             </div>
 
             <div className="form-group">
-              <label htmlFor="cStudent">Student's Name:</label>
+              <label htmlFor="cStudent">Student's Name: </label>
               <input
                 type="text"
                 id="cStudent"
@@ -76,6 +79,7 @@ const CareReport = () => {
         </div>
       </div>
     </div>
+      </>
   );
 };
 
