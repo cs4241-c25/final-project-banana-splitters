@@ -71,21 +71,23 @@ const Login = () => {
     <div>
         <NavigationBar />
 
-        <div className="flex justify-center items-center h-screen w-screen bg-[#F5F5F5]">
+        <div className="flex justify-center items-start pt-16 h-screen w-screen bg-[#F5F5F5]">
             <div className="bg-[#CECFD0] p-6 rounded-lg shadow-lg w-96 text-center border border-blue-200">
                 <header className="bg-[#34383B] text-white py-6 rounded-t-lg">
                     <h1 className="text-3xl font-bold">Login</h1>
                 </header>
-                <div className="mt-6">
-                    <p className="text-lg  mb-4" style={{ color: "#AC2B37" }}>
-                        Must login to access the admin page
+                <div className="mt-8">
+                    <p className="text-lg text-gray-custom mb-4">
+                        Must login to access the admin page!
                     </p>
-                    <button
-                        onClick={() => loginWithRedirect({ appState: { returnTo: "/admin" } })}
-                        className="w-full py-3 bg-red-700 text-white font-bold rounded-md hover:bg-red-800 transition-colors"
-                    >
-                        Log in with Auth0
-                    </button>
+                    <div className="button-container">
+                        <button
+                            onClick={() => loginWithRedirect({ appState: { returnTo: "/admin" } })}
+                            className="login-btn w-full py-3 bg-red-700 text-white font-bold rounded-md hover:bg-red-800 transition-colors"
+                        >
+                            Log in with Auth0
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>

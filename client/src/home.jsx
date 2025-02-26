@@ -33,17 +33,8 @@ const Home = () => {
                     right: '20px',
                     zIndex: 1000
                 }}>
-                    <button onClick={() => logout({returnTo: window.location.origin})} style={{
-                        backgroundColor: '#AC2B37',
-                        color: 'white',
-                        padding: '10px 20px',
-                        fontSize: '16px',
-                        fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif',
-                        border: 'none',
-                        borderRadius: '5px',
-                        cursor: 'pointer',
-                        transition: 'background-color 0.3s ease'
-                    }}>
+                    <button onClick={() => logout({returnTo: window.location.origin})}
+                            className="logout-btn">
                         Logout
                     </button>
                 </div>
