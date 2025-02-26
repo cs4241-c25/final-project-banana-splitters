@@ -45,88 +45,72 @@ const Home = () => {
                     minHeight: '100vh',
                     marginTop: '30px'
                 }}>
-
-                    {/* Left Side */}
+                    {/* Left Side: Goal, Explore, and Resources */}
                     <div style={{
                         width: '50vw',
                         backgroundColor: '#F5F5F5',
                         display: 'flex',
-                        justifyContent: 'center',
+                        flexDirection: 'column', // Stack content vertically
                         alignItems: 'flex-start',
                         paddingTop: '1rem',
-                        paddingLeft: '1rem'
+                        paddingLeft: '1rem',
+                        gap: '2rem' // Add spacing between sections
                     }}>
-                        <div style={{
-                            display: 'flex',
-                            flexDirection: 'column',
-                            gap: '2rem'
-                        }}>
-                            <div>
-                                <h2 style={{
-                                    color: '#AC2B37',
-                                    fontSize: '30px',
-                                    fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif'
-                                }}>
-                                    Our Goal
-                                </h2>
-                                <p style={{
-                                    color: '#4F1217',
-                                    fontSize: '20px',
-                                    fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif'
-                                }}>
-                                    The goal of the WPI Mental Heath & Wellness Hub is to provide various Mental Health
-                                    tools, resources, and support for the WPI community.
-                                </p>
-                            </div>
-
-                            <div>
-                                <h2 style={{
-                                    color: '#AC2B37',
-                                    fontSize: '30px',
-                                    fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif'
-                                }}>
-                                    Explore the Hub!
-                                </h2>
-                                <p style={{
-                                    color: '#4F1217',
-                                    fontSize: '20px',
-                                    fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif'
-                                }}>
-                                    We offer various tools and resources to support your mental health and well-being.
-                                    Here are some areas you can explore:
-                                </p>
-                                <ul style={{
-                                    color: '#4F1217',
-                                    fontSize: '18px',
-                                    fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif',
-                                    paddingLeft: '20px',
-                                    listStyleType: 'disc'
-                                }}>
-                                    <li><strong>Self-Care:</strong> Learn tips and strategies to add self-care into your
-                                        daily routine
-                                    </li>
-                                    <li><strong>Care Reports:</strong> Submit a care report form if you feel concerned
-                                        about a community member
-                                    </li>
-                                    <li><strong>Resources:</strong> Find more mental health and wellness resources
-                                    </li>
-                                </ul>
-                            </div>
+                        {/* Goal and Explore Section */}
+                        <div>
+                            <h2 style={{
+                                color: '#AC2B37',
+                                fontSize: '30px',
+                                fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif'
+                            }}>
+                                Our Goal
+                            </h2>
+                            <p style={{
+                                color: '#4F1217',
+                                fontSize: '20px',
+                                fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif'
+                            }}>
+                                The goal of the WPI Mental Health & Wellness Hub is to provide various Mental Health
+                                tools, resources, and support for the WPI community.
+                            </p>
                         </div>
-                    </div>
 
-                    {/* Right Side */}
-                    <div style={{
-                        width: '50vw',
-                        backgroundColor: '#F5F5F5',
-                        display: 'flex',
-                        justifyContent: 'center',
-                        alignItems: 'flex-start',
-                        paddingTop: '1rem'
-                    }}>
+                        <div>
+                            <h2 style={{
+                                color: '#AC2B37',
+                                fontSize: '30px',
+                                fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif'
+                            }}>
+                                Explore the Hub!
+                            </h2>
+                            <p style={{
+                                color: '#4F1217',
+                                fontSize: '20px',
+                                fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif'
+                            }}>
+                                We offer various tools and resources to support your mental health and well-being.
+                                Here are some areas you can explore:
+                            </p>
+                            <ul style={{
+                                color: '#4F1217',
+                                fontSize: '18px',
+                                fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif',
+                                paddingLeft: '20px',
+                                listStyleType: 'disc'
+                            }}>
+                                <li><strong>Self-Care:</strong> Learn tips and strategies to add self-care into your
+                                    daily routine
+                                </li>
+                                <li><strong>Care Reports:</strong> Submit a care report form if you feel concerned about
+                                    a community member
+                                </li>
+                                <li><strong>Resources:</strong> Find more mental health and wellness resources</li>
+                            </ul>
+                        </div>
+
+                        {/* Resources Section (Moved Here) */}
                         <div style={{
                             width: '42vw',
-                            height: '42vw',
                             backgroundColor: '#D9D9D9',
                             display: 'flex',
                             flexDirection: 'column',
@@ -205,8 +189,51 @@ const Home = () => {
                                 </ul>
                             </div>
                         </div>
+
+                    </div>
+
+
+                    <div style={{
+                        width: '50vw',
+                        backgroundColor: '#F5F5F5',
+                        display: 'flex',
+                        flexDirection: 'column',
+                        alignItems: 'flex-start',
+                        paddingTop: '1rem',
+                        paddingLeft: '5rem'
+                    }}>
+                        <h2 style={{
+                            color: '#AC2B37',
+                            fontSize: '30px',
+                            fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif'
+                        }}>Important Wellness Info:</h2>
+
+                        <div style={{
+                            color: '#4F1217', fontSize: '20px',
+                            fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif'
+                        }}>
+                            <p style = {{fontWeight: 'bold'}}>Wellness days for 2024-2025 Academic Year:</p>
+                            <ul style={{paddingLeft: '50px', listStyleType: 'disc'}}>
+                                <li>Friday, September 27, 2024</li>
+                                <li>Tuesday, November 5, 2024</li>
+                                <li>Friday, February 14, 2025</li>
+                                <li>Monday, March 31, 2025</li>
+                            </ul>
+
+                            <p style = {{fontWeight: 'bold'}}>Wellness Courses for the 2024-2025 Academic Year:</p>
+                            <ul style={{paddingLeft: '50px', listStyleType: 'disc'}}>
+                                <li>WPE 1601 Insight Program</li>
+                                <li>WPE 1610 Approaches to Holistic Wellness</li>
+                                <li>WPE 1611 Introduction to Mindfulness</li>
+                                <li>WPE 1612 Intro to Yoga</li>
+                                <li>WPE 1613 Succeeding as an Introvert</li>
+                            </ul>
+                        </div>
+
                     </div>
                 </div>
+
+
             </div>
         </>
 
