@@ -12,7 +12,7 @@ const Admin = () => {
     return (
         <>
         <NavigationBar />
-        <div style={{ padding: "2rem" }}>
+        <div style={{ padding: "2rem", backgroundColor: '#F5F5F5',}}>
             <h1>Admin Page</h1>
             <p>Welcome, {user?.name}! This is the admin page.</p>
             <button onClick={() => logout({ returnTo: window.location.origin })}>
