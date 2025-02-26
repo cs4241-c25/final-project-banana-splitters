@@ -7,13 +7,12 @@ const Home = () => {
 
     return (
         <>
-            <NavigationBar/>
-
+            <NavigationBar />
             <div style={{
                 padding: '2rem',
                 backgroundColor: '#F5F5F5',
                 minHeight: '100vh',
-                paddingTop: '22vh'
+                paddingTop: '60vh'
             }}>
 
 
@@ -63,7 +62,8 @@ const Home = () => {
                         display: 'flex',
                         justifyContent: 'center',
                         alignItems: 'flex-start',
-                        paddingTop: '1rem'
+                        paddingTop: '1rem',
+                        paddingLeft: '1rem'
                     }}>
                         <div style={{
                             display: 'flex',
