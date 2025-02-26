@@ -77,7 +77,7 @@ const Login = () => {
                     <h1 className="text-3xl font-bold">Login</h1>
                 </header>
                 <div className="mt-6">
-                    <p className="text-lg text-red-100 mb-4">
+                    <p className="text-lg  mb-4" style={{ color: "#AC2B37" }}>
                         Must login to access the admin page
                     </p>
                     <button
