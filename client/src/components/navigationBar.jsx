@@ -1,4 +1,6 @@
 import wpiCrest from '../assets/wpiCrest2.png';
+import { Link } from 'react-router-dom';
+
 const NavigationBar = () => {
     return (
         <>
@@ -45,10 +47,10 @@ const NavigationBar = () => {
                         fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif',
                         justifyContent: 'space-evenly',
                     }}>
-                        <a href="/" style={{color: '#F5F5F5', textDecoration: 'underline'}}>Home</a>
-                        <a href="/selfcare" style={{color: '#F5F5F5', textDecoration: 'underline'}}>Self Care</a>
-                        <a href="/care-report" style={{color: '#F5F5F5', textDecoration: 'underline'}}>Care Report Form</a>
-                        <a href="/admin" style={{color: '#F5F5F5', textDecoration: 'underline'}}>Admin</a>
+                        <Link to="/" style={{ color: '#F5F5F5', textDecoration: 'underline' }}>Home</Link>
+                        <Link to="/selfcare" style={{ color: '#F5F5F5', textDecoration: 'underline' }}>Self Care</Link>
+                        <Link to="/care-report" style={{ color: '#F5F5F5', textDecoration: 'underline' }}>Care Report Form</Link>
+                        <Link to="/admin" style={{ color: '#F5F5F5', textDecoration: 'underline' }}>Admin</Link>
                     </div>
                 </nav>
             </header>
