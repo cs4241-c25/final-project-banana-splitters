@@ -3,6 +3,35 @@ import "./care-report.css"; // Import your CSS file
 import NavigationBar from "./components/navigationBar.jsx";
 
 const CareReport = () => {
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    const data = {
+      reporter: formData.get("Reporter"),
+      client: formData.get("Client"),
+      location: formData.get("location"),
+      concerns: formData.get("concerns"),
+    };
+
+    try {
+      const response = await fetch("http://localhost:5173/care-report", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+      if (response.ok) {
+        console.log("Report submitted successfully!");
+        event.target.reset();
+      } else {
+        console.error("Error submitting report");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+    }
+  };
+
   return (
       <>
       <NavigationBar />
@@ -76,6 +105,13 @@ const CareReport = () => {
               ></textarea>
             </div>
           </form>
+          <div className="button-container">
+            <button
+              type="submit"
+              className="login-btn w-full py-3 bg-red-700 text-white font-bold rounded-md hover:bg-red-800 transition-colors">
+              Submit Report
+            </button>
+          </div>
         </div>
       </div>
     </div>
