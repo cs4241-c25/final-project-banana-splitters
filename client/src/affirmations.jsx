@@ -6,7 +6,7 @@ const Affirmations = () => {
     const [text, setText] = useState("")
     const [color, setColor] = useState("#AC2B37")
 
-    // Show existing affirmations from local storage
+    // Show all affirmations from local storage
     useEffect(() => {
         const storedAffirmation = JSON.parse(localStorage.getItem("affirmations"))
         if (storedAffirmation) {
@@ -19,7 +19,7 @@ const Affirmations = () => {
         localStorage.setItem("affirmations", JSON.stringify(affirmation))
     }, [affirmation])
 
-    // Add a new affirmation (includes text and color of sticky note)
+    // Add new affirmation (includes text and color of sticky note)
     const addAffirmation = () => {
         if (text.trim()) {
             setAffirmation([...affirmation, { text, color }])
@@ -27,16 +27,9 @@ const Affirmations = () => {
         }
     }
 
-    // Delete sticky note
+    // Delete affirmation
     const deleteAffirmation = (index) => {
-        const updatedAffirmation = affirmation
-            .map((item, i) => {
-                if (i === index ){
-                    return null
-                } return item
-            })
-            .filter(item => item !== null)
-            setAffirmation(updatedAffirmation)
+        setAffirmation(affirmation.filter((_, i) => i !== index))
     }
 
     return (
