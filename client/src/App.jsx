@@ -6,6 +6,7 @@ import Login from "./Login";
 import Admin from "./admin";
 import Home from "./home.jsx";
 import CareReport from "./care-report.jsx";
+import Affirmations from "./Affirmations";
 
 const App = () => {
     const { isAuthenticated } = useAuth0();
@@ -16,6 +17,7 @@ const App = () => {
                 <Route path="/" element={<Home />} />
                 <Route path='/Login' element={<Login />} />
                 <Route path="/selfCare" element={<SelfCare />} />
+                <Route path="/affirmations" element={<Affirmations />} />
                 <Route path="/care-report" element={<CareReport />} />
                 <Route
                     path="/admin" element={isAuthenticated ? <Admin /> : <Navigate to="/login" />}
