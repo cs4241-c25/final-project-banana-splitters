@@ -37,6 +37,9 @@ const NavigationBar = () => {
                         WPI Mental Health and Wellness Hub
                     </h1>
                 </div>
+                <div className="footer-note">
+                    This is not a WPI website, this is a student project.
+                </div>
 
                 <nav style={{marginTop: 'auto'}}>
                     <div style={{
