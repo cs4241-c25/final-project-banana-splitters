@@ -22,14 +22,7 @@ const Affirmations = () => {
     // Add a new affirmation (includes text and color of sticky note)
     const addAffirmation = () => {
         if (text.trim()) {
-            const newAffirmation = {
-                text: text,
-                color: color
-            }
-            setAffirmation((prevAffirmation) => [
-                ...prevAffirmation,
-                    newAffirmation
-                ])
+            setAffirmation([...affirmation, { text, color }])
             setText("")
         }
     }
