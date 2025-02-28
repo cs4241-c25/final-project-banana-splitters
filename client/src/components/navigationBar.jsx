@@ -29,7 +29,7 @@ const NavigationBar = () => {
                         style={{width: '50px', height: '50px'}}
                     />
                     <h1 style={{
-                        fontSize: '1.5rem',
+                        fontSize: '32px',
                         fontWeight: 'bold',
                         color: '#F5F5F5',
                         fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif',
