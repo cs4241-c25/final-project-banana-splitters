@@ -22,16 +22,28 @@ const Affirmations = () => {
     // Add a new affirmation (includes text and color of sticky note)
     const addAffirmation = () => {
         if (text.trim()) {
-            const newAffirmation = { text, color }
-            setAffirmation((prevAffirmation) => [...prevAffirmation, newAffirmation])
+            const newAffirmation = {
+                text: text,
+                color: color
+            }
+            setAffirmation((prevAffirmation) => [
+                ...prevAffirmation,
+                    newAffirmation
+                ])
             setText("")
         }
     }
 
     // Delete sticky note
     const deleteAffirmation = (index) => {
-        const updatedAffirmation = affirmation.filter((_, i) => i !== index)
-        setAffirmation(updatedAffirmation)
+        const updatedAffirmation = affirmation
+            .map((item, i) => {
+                if (i === index ){
+                    return null
+                } return item
+            })
+            .filter(item => item !== null)
+            setAffirmation(updatedAffirmation)
     }
 
     return (
