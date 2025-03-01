@@ -31,13 +31,16 @@ const NavigationBar = () => {
                         style={{width: '50px', height: '50px'}}
                     />
                     <h1 style={{
-                        fontSize: '1.5rem',
+                        fontSize: '32px',
                         fontWeight: 'bold',
                         color: '#F5F5F5',
                         fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif',
                     }}>
                         WPI Mental Health and Wellness Hub
                     </h1>
+                </div>
+                <div className="footer-note">
+                    This is not a WPI website, this is a student project.
                 </div>
 
                 <nav style={{marginTop: 'auto'}}>
@@ -51,6 +54,11 @@ const NavigationBar = () => {
                         <Link to="/selfcare" style={{ color: '#F5F5F5', textDecoration: 'underline' }}>Self Care</Link>
                         <Link to="/care-report" style={{ color: '#F5F5F5', textDecoration: 'underline' }}>Care Report Form</Link>
                         <Link to="/admin" style={{ color: '#F5F5F5', textDecoration: 'underline' }}>Admin</Link>
+                        <a href="/" style={{color: '#F5F5F5', textDecoration: 'underline'}}>Home</a>
+                        <a href="/selfcare" style={{color: '#F5F5F5', textDecoration: 'underline'}}>Self Care</a>
+                        <a href="/affirmations" style={{color: '#F5F5F5', textDecoration: 'underline'}}>Affirmations Board</a>
+                        <a href="/care-report" style={{color: '#F5F5F5', textDecoration: 'underline'}}>Care Report Form</a>
+                        <a href="/admin" style={{color: '#F5F5F5', textDecoration: 'underline'}}>Admin</a>
                     </div>
                 </nav>
             </header>
