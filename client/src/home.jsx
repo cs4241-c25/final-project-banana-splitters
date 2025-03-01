@@ -212,7 +212,7 @@ const Home = () => {
                             color: '#4F1217', fontSize: '20px',
                             fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif'
                         }}>
-                            <p style = {{fontWeight: 'bold'}}>Wellness days for 2024-2025 Academic Year:</p>
+                            <p style={{fontWeight: 'bold'}}>Wellness days for 2024-2025 Academic Year:</p>
                             <ul style={{paddingLeft: '50px', listStyleType: 'disc'}}>
                                 <li>Friday, September 27, 2024</li>
                                 <li>Tuesday, November 5, 2024</li>
@@ -220,7 +220,7 @@ const Home = () => {
                                 <li>Monday, March 31, 2025</li>
                             </ul>
 
-                            <p style = {{fontWeight: 'bold'}}>Wellness Courses for the 2024-2025 Academic Year:</p>
+                            <p style={{fontWeight: 'bold'}}>Wellness Courses for the 2024-2025 Academic Year:</p>
                             <ul style={{paddingLeft: '50px', listStyleType: 'disc'}}>
                                 <li>WPE 1601 Insight Program</li>
                                 <li>WPE 1610 Approaches to Holistic Wellness</li>
