@@ -96,6 +96,30 @@ app.get("*", (req, res) => {
     res.sendFile(path.join(__dirname, "client/dist", "index.html"))
 })
 
+
+// ----- Affirmations ----------
+// Store affirmations in server
+let affirmations = []
+let affirmationID = 1
+
+app.get("/affirmations", (req, res) => {
+    res.json(affirmations)
+})
+
+// Post an affirmation (each affirmation is a sticky note color and text)
+app.post("/affirmations", (req, res) => {
+    const { text, color } = req.body;
+    if (!text || !color) {
+        return res.status(400).json({ error: "Text and color are required." })
+    }
+
+    const newAffirmation = { id: affirmationID++, text, color }
+    affirmations.push(newAffirmation);
+    res.status(201).json(newAffirmation)
+})
+
+
+
 app.listen(port, () => {
     console.log(`server.js listening on port ${port}`)
 })
