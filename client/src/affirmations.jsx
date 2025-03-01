@@ -54,9 +54,7 @@ const Affirmations = () => {
                 <div style={{
                     marginBottom: "10px"
                 }}>
-                    <label style={{
-                        marginRight: "10px",
-                        fontWeight: "bold"}}>
+                    <label className="mr-2" style={{ color: "#AC2B37", fontWeight: "600" }}>
                         Choose a color:
                     </label>
 
