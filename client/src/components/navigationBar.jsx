@@ -52,13 +52,9 @@ const NavigationBar = () => {
                     }}>
                         <Link to="/" style={{ color: '#F5F5F5', textDecoration: 'underline' }}>Home</Link>
                         <Link to="/selfcare" style={{ color: '#F5F5F5', textDecoration: 'underline' }}>Self Care</Link>
+                        <Link to="/affirmations" style={{ color: '#F5F5F5', textDecoration: 'underline' }}>Affirmations Board</Link>
                         <Link to="/care-report" style={{ color: '#F5F5F5', textDecoration: 'underline' }}>Care Report Form</Link>
                         <Link to="/admin" style={{ color: '#F5F5F5', textDecoration: 'underline' }}>Admin</Link>
-                        <a href="/" style={{color: '#F5F5F5', textDecoration: 'underline'}}>Home</a>
-                        <a href="/selfcare" style={{color: '#F5F5F5', textDecoration: 'underline'}}>Self Care</a>
-                        <a href="/affirmations" style={{color: '#F5F5F5', textDecoration: 'underline'}}>Affirmations Board</a>
-                        <a href="/care-report" style={{color: '#F5F5F5', textDecoration: 'underline'}}>Care Report Form</a>
-                        <a href="/admin" style={{color: '#F5F5F5', textDecoration: 'underline'}}>Admin</a>
                     </div>
                 </nav>
             </header>
