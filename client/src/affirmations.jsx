@@ -78,7 +78,7 @@ const Affirmations = () => {
                         marginBottom: "10px",
                         borderRadius: "5px",
                         backgroundColor: "#CECFD0",
-                        border: "1px solid #CECFD0"
+                        border: "1px solid #CECFD0",
                     }}
                 />
 
