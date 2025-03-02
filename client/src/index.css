@@ -21,6 +21,12 @@
   color: #4B5563;
 }
 
+.form-container {
+  margin-top: 100px;
+  transform: scale(1.4);
+  transform-origin: center;
+}
+
 .button-container {
   display: flex;
   justify-content: center;
