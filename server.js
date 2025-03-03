@@ -5,14 +5,18 @@ const jwksRsa = require('jwks-rsa')
 const cors = require('cors')
 const path = require('path')
 const app = express()
-const port = 3000
+const port = process.env.PORT || 3000;
 
 app.use(cors({
-    origin: ['http://localhost:5173', 'http://localhost:5174'], // change this link once glitch is set up
-    methods: 'GET,POST', // allow GET and POST requests
+    origin: [
+        'http://localhost:5173',
+        'http://localhost:5174',
+        'https://shade-fluttering-darkness.glitch.me'
+    ],
+    methods: 'GET,POST',
     credentials: true
-}))
-app.use(express.json())
+}));
+
 
 
 // Connect to MongoDB
