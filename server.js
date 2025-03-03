@@ -1,10 +1,12 @@
 const express = require('express')
+const ve = require('vite-express')
 const mongoose = require("mongoose");
 const jwt = require('jsonwebtoken')
 const jwksRsa = require('jwks-rsa')
 const cors = require('cors')
 const path = require('path')
 const app = express()
+const ViteExpress = ve;
 const port = 3000
 
 app.use(cors({
@@ -114,10 +116,10 @@ app.post("/submit-care-report", async (req, res) => {
     }
 });
 
-app.use(express.static(path.join(__dirname, "client/dist")))
+app.use(express.static(path.join(__dirname, "client", "dist")))
 
 app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "client/dist", "index.html"))
+    res.sendFile(path.join(__dirname, "client", "dist", "index.html"))
 })
 
 
@@ -143,7 +145,10 @@ app.post("/affirmations", (req, res) => {
 })
 
 
-
-app.listen(port, () => {
-    console.log(`server.js listening on port ${port}`)
+//
+// app.listen(port, () => {
+//     console.log(`server.js listening on port ${port}`)
+// })
+ViteExpress.listen(app, port, () => {
+    console.log(`Listening on port ${port}` )
 })

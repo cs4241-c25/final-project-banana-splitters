@@ -4,8 +4,8 @@ import { useAuth0 } from "@auth0/auth0-react";
 import SelfCare from "./selfCare";
 import Login from "./Login";
 import Admin from "./admin";
-import Home from "./home.jsx";
-import CareReport from "./care-report.jsx";
+import Home from "./home";
+import CareReport from "./care-report";
 import Affirmations from "./Affirmations";
 
 const App = () => {
