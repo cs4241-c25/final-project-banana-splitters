@@ -37,7 +37,10 @@ const Admin = () => {
                 <h1>Admin</h1>
                 <p className="welcome-message">Welcome, {user?.name}! This is the admin page.</p>
 
+                <hr/>
 
+
+                <h2 className="admin-title">Care Reports Dashboard:</h2>
                 <div className="table-container">
                     <table>
                         <thead>
