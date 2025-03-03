@@ -8,7 +8,8 @@ const app = express()
 const port = 3000
 
 app.use(cors({
-    origin: 'http://localhost:5173', // change this link once glitch is set up
+    origin: ['http://localhost:5173', 'http://localhost:5174'], // change this link once glitch is set up
+    methods: 'GET,POST', // allow GET and POST requests
     credentials: true
 }))
 app.use(express.json())
@@ -26,11 +27,10 @@ mongoose.connect(uri, {
 
 // Care Report schema
 const crSchema = new mongoose.Schema({
-    //User: { type: String, required: true }, // maybe not needed?
-    Name: { type: String, required: true },
+    rName: { type: String, required: false }, // not required for anonymous reports
     sName: { type: String, required: true },
     residence: { type: String, required: true },
-    Concerns: { type: Number, required: true }, // maybe not required?
+    concerns: { type: String, required: true },
 });
 
 const careReport = mongoose.model("Care_Report", crSchema);
@@ -87,6 +87,30 @@ app.get("/results", async (req, res) => {
         res.json(await careReport.find({}));
     } catch (err) {
         res.status(500).json({ error: err.message });
+    }
+});
+
+// route to submit care report
+app.post("/submit-care-report", async (req, res) => {
+    try {
+        // get fields from request body
+        const { rName, sName, residence, concerns } = req.body;
+
+        // validate fields (assuming all but reporter name are required)
+        if (!sName || !residence || !concerns) {
+            return res.status(400).json({ error: "All fields are required." });
+        }
+
+        // create a new care report document
+        const newReport = new careReport({ rName, sName, residence, concerns });
+        await newReport.save(); // saving to Mongo
+
+        console.log("New Care Report Saved:", newReport); // debug
+        res.status(201).json({ message: "Care report submitted successfully!" });
+
+    } catch (error) {
+        console.error("Error saving care report:", error);
+        res.status(500).json({ error: "Internal server error" });
     }
 });
 
