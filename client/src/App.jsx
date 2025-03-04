@@ -6,7 +6,7 @@ import Login from "./Login";
 import Admin from "./admin";
 import Home from "./home";
 import CareReport from "./care-report";
-import Affirmations from "./Affirmations";
+import Affirmations from "./affirmations";
 
 const App = () => {
     const { isAuthenticated } = useAuth0();
